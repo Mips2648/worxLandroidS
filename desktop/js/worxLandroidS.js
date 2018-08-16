@@ -103,12 +103,13 @@ function addCmdToTable(_cmd) {
 		tr += '<span class="subType" subType="' + init(_cmd.subType) + '" style=""></span>';
 		//tr += '<input class="cmdAttr" data-l1key="configuration" data-l2key="virtualAction" value="1" style="display:none;" >';
 		tr += '</td>';
-		tr += '</td><td>';
+
 		
 		tr += '<td>';//4
 		tr += '<input class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="topic" style="height : 33px;" ' + disabled + ' placeholder="{{Topic}}"><br/>';
         tr += '</td>';
 		tr += '<td>';//5
+		tr += '</td><td>';
 		tr += '<input class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="request" style="height : 33px;" ' + disabled + ' placeholder="{{Payload}}">';
 		tr += '<a class="btn btn-default btn-sm cursor listEquipementInfo" data-input="request" style="margin-left : 5px;"><i class="fa fa-list-alt "></i> {{Rechercher équipement}}</a>';
 		tr +='</select></span>';
